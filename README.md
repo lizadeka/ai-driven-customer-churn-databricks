@@ -71,6 +71,15 @@ Each category maps directly to a retention action.
 
 ---
 
+## Design Considerations
+This project was built using Databricks Community Edition, which has limited support for large Spark ML pipelines on serverless compute.
+
+To ensure stability, explainability, and a complete end-to-end solution, the project implements an AI-driven, rule-based churn risk scoring system. This approach mirrors real-world industry practices where transparent decision logic is often used before or alongside machine learning models.
+
+The architecture is designed to be easily extensible to ML-based models in a full Databricks environment.
+
+---
+
 ## Future Enhancements
 - Integrate machine learning models in a full Databricks environment
 - Track experiments using MLflow
