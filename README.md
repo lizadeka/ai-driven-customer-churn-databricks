@@ -89,12 +89,11 @@ The architecture is designed to be easily extensible to ML-based models in a ful
 
 ## Folder Structure 
 
+```sql
+
 ai-driven-customer-churn-databricks/
 │
 ├── notebooks/
-│   ├── 01_bronze_ingestion.ipynb
-│   ├── 02_silver_cleaning.ipynb
-│   ├── 03_gold_analytics.ipynb
 │   └── 04_churn_risk_decision_logic.ipynb
 │
 ├── data/
@@ -108,6 +107,8 @@ ai-driven-customer-churn-databricks/
 │   └── churn_risk_flow.png
 │
 └── README.md
+
+```
 
 ---
 
