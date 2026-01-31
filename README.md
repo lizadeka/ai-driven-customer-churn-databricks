@@ -3,7 +3,6 @@ The project implements an AI-driven, explainable decision system using rule-base
 
 ## Overview
 This project demonstrates an end-to-end, AI-driven customer churn risk and retention decision system built using the **Databricks Lakehouse architecture**.
-
 The focus of the project is not only on analytics or prediction, but on converting data insights into **explainable, real-world business decisions**.
 ---
 
