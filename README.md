@@ -78,9 +78,7 @@ To ensure stability, explainability, and a complete end-to-end solution, the pro
 
 The architecture is designed to be easily extensible to ML-based models in a full Databricks environment.
 
----
-
-ML Extension (Conceptual)
+ML Extension (Conceptual) - Uploaded an extra file Tried-ML-model
 A logistic regression churn model was explored for interpretability. Due to Community Edition serverless constraints, the final implementation prioritizes an explainable AI decision layer. The feature pipeline is fully compatible with Spark ML and MLflow in enterprise Databricks environments.
 
 ---
