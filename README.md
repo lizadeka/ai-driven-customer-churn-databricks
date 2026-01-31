@@ -97,10 +97,10 @@ A logistic regression churn model was explored for interpretability. Due to Comm
 ai-driven-customer-churn-databricks/
 │
 ├── notebooks/
-│   └── 04_churn_risk_decision_logic.ipynb
-│
-├── data/
-│   └── README.md
+│   |__ Bronze layer.ipynb
+|   |__ Silver layer.ipynb
+|   |__ Gold layer.ipynb
+|   └── churn_risk_decision_logic.ipynb
 │
 ├── presentation/
 │   └── AI_Driven_Customer_Churn_System.pdf
