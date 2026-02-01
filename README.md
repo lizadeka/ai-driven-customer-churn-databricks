@@ -148,12 +148,8 @@ ai-driven-customer-churn-databricks/
 |   |__ Gold layer.ipynb
 |   └── churn_risk_decision_logic.ipynb
 │
-├── presentation/
-│   └── AI_Driven_Customer_Churn_System.pdf
-│
-├── images/
-│   ├── architecture.png
-│   └── churn_risk_flow.png
+├── 
+│   └── AI-Driven Customer Churn Risk & Retention Decision System.pdf
 │
 └── README.md
 
