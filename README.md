@@ -2,7 +2,7 @@
 
 ## Overview
 
-The project implements an AI-driven, explainable decision system using rule-based intelligence. The architecture is designed to be extensible to machine learning models in a full Databricks environment.
+The project implements an AI-driven, explainable decision system using rule-based intelligence. 
 This project demonstrates an end-to-end, AI-driven customer churn risk and retention decision system built using the **Databricks Lakehouse architecture**.
 
 ---
@@ -83,6 +83,49 @@ As an extension to the decision-first churn system, a lightweight churn predicti
 Due to resource constraints in Databricks Community Edition, feature selection was intentionally applied to reduce categorical dimensionality.
 
 A Logistic Regression model was trained using a reduced feature set and achieved an ROC-AUC of ~0.84, demonstrating strong predictive performance while maintaining pipeline stability.
+
+🔹 Feature Selection & Dimensionality Reduction (ML Stability)
+
+During the machine learning extension, intentional feature selection was applied to ensure model stability and performance within Databricks Community Edition constraints.
+
+Due to the high number of categorical variables in the original dataset, several columns were deliberately excluded to reduce one-hot encoding dimensionality and memory overhead.
+
+Dropped categorical columns included:
+
+```
+OnlineSecurity
+OnlineBackup
+DeviceProtection
+TechSupport
+StreamingTV
+StreamingMovies
+MultipleLines
+PhoneService
+Partner
+Dependents
+```
+
+These columns were removed because:
+
+They contribute marginal predictive signal compared to core churn drivers
+
+One-hot encoding significantly increases feature dimensionality
+
+Reducing dimensionality improves pipeline stability and interpretability
+
+The final ML feature set retained high-impact variables such as:
+```
+tenure
+MonthlyCharges
+TotalCharges
+SeniorCitizen
+Contract
+InternetService
+PaymentMethod
+gender
+```
+
+This approach reflects real-world feature selection practices, where model reliability and operational constraints are prioritized over exhaustive feature usage.
 
 ---
 
