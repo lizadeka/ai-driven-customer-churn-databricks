@@ -76,10 +76,13 @@ This project was built using Databricks Community Edition, which has limited sup
 
 To ensure stability, explainability, and a complete end-to-end solution, the project implements an AI-driven, rule-based churn risk scoring system. This approach mirrors real-world industry practices where transparent decision logic is often used before or alongside machine learning models.
 
-The architecture is designed to be easily extensible to ML-based models in a full Databricks environment.
+🔹 Lightweight ML Extension (Churn Prediction)
 
-ML Extension (Conceptual) - Uploaded an extra file Tried-ML-model
-A logistic regression churn model was explored for interpretability. Due to Community Edition serverless constraints, the final implementation prioritizes an explainable AI decision layer. The feature pipeline is fully compatible with Spark ML and MLflow in enterprise Databricks environments.
+As an extension to the decision-first churn system, a lightweight churn prediction model was implemented using Spark ML.
+
+Due to resource constraints in Databricks Community Edition, feature selection was intentionally applied to reduce categorical dimensionality.
+
+A Logistic Regression model was trained using a reduced feature set and achieved an ROC-AUC of ~0.84, demonstrating strong predictive performance while maintaining pipeline stability.
 
 ---
 
