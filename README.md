@@ -158,4 +158,4 @@ ai-driven-customer-churn-databricks/
 ---
 
 ## Author
-Built as a self-directed project to demonstrate real-world data engineering and AI decision system design.
+Liza Deka
